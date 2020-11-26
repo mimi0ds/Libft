@@ -6,15 +6,15 @@
 /*   By: hkuroki <hkuroki@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 22:24:38 by hkuroki           #+#    #+#             */
-/*   Updated: 2020/11/26 21:16:36 by hkuroki          ###   ########.fr       */
+/*   Updated: 2020/11/27 02:06:43 by hkuroki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strjoin(char const *s1, char const *s2)
+char			*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*str;
+	char		*str;
 	size_t		i;
 	size_t		j;
 

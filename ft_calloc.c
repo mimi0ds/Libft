@@ -6,7 +6,7 @@
 /*   By: hkuroki <hkuroki@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 22:17:06 by hkuroki           #+#    #+#             */
-/*   Updated: 2020/11/24 04:27:54 by hkuroki          ###   ########.fr       */
+/*   Updated: 2020/11/27 02:36:51 by hkuroki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,16 @@
 
 void		*ft_calloc(size_t count, size_t size)
 {
-	void *s;
+	unsigned char *s;
 
+	if (count == 0 || size == 0)
+	{
+		count = 1;
+		size = 1;
+	}
 	s = malloc(count * size);
 	if (s == NULL)
 		return (NULL);
 	ft_bzero(s, count * size);
-	return (s);
+	return ((void *)s);
 }
